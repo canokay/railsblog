@@ -1,24 +1,40 @@
-# README
+# RubyBlog
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+https://guides.rubyonrails.org/getting_started.html Guide.
 
-Things you may want to cover:
+```
+$ ruby -v
 
-* Ruby version
+```
 
-* System dependencies
+```
+gem install rails
+```
 
-* Configuration
+```
+rails --version
+```
 
-* Database creation
+```
+rails new blog
+```
 
-* Database initialization
+```
+cd blog
+```
 
-* How to run the test suite
+NOT: node ve yarn son versyon kurulu olmalıdır.
 
-* Services (job queues, cache servers, search engines, etc.)
+```
+rails webpacker:install
+```
 
-* Deployment instructions
+```
+rails server
+```
 
-* ...
+veya
+
+```
+rails s
+```

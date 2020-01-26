@@ -1,5 +1,7 @@
 class ArticlesController < ApplicationController
-  before_action : set_article,only : [:show, :edit, :update, :destroy]
+
+  before_action :set_article, only: [:show, :edit, :update, :destroy]
+
   def index
     @articles = Article.all
   end
@@ -26,7 +28,6 @@ class ArticlesController < ApplicationController
   end
 
   def update
-
     if @article.update(article_params)
       redirect_to @article
     else
@@ -45,8 +46,9 @@ class ArticlesController < ApplicationController
       params.require(:article).permit(:title, :text)
     end
 
-    def set_article
-      @article = Article.find(params[:id])
-    end
+  def set_article
+    @article = Article.find(params[:id])
+  end
+
 
 end

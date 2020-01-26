@@ -10,7 +10,9 @@
 
       <% @articles.each do |article| %>
       <div class="card mb-4">
-        <img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap">
+        <%= link_to article_path(article) do %>
+           <%= image_tag "http://placehold.it/750x300", class: "card-img-top" %>
+        <% end %>
         <div class="card-body">
           <h2 class="card-title"><%= article.title %></h2>
           <p class="card-text"><%= article.text %></p>

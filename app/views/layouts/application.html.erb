@@ -11,6 +11,12 @@
   </head>
 
   <body>
+    <% if notice %>
+      <p class="alert alert-success"><%= notice %></p>
+    <% end %>
+    <% if alert %>
+      <p class="alert alert-danger"><%= alert %></p>
+    <% end %>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
       <div class="container">

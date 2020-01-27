@@ -1,40 +1,41 @@
 # RubyBlog
 
-https://guides.rubyonrails.org/getting_started.html Guide.
+This project created using [Offical Guide of Getting Started](https://guides.rubyonrails.org/getting_started.html).
 
-```
+```bash
+# show ruby version 
 $ ruby -v
-
 ```
 
-```
-gem install rails
-```
-
-```
-rails --version
+```bash
+# install rails using gem
+$ gem install rails
 ```
 
-```
-rails new blog
-```
-
-```
-cd blog
+```bash
+# show rails version
+$ rails --version
 ```
 
-NOT: node ve yarn son versyon kurulu olmalıdır.
-
-```
-rails webpacker:install
-```
-
-```
-rails server
+```bash
+# create a new rails project
+$ rails new blog
 ```
 
-veya
-
+```bash
+# navigate to the project
+$ cd blog
 ```
-rails s
+
+**NOT:** `node` ve `yarn` son versiyon kurulu olmalıdır.
+
+```bash
+$ rails webpacker:install
+```
+
+```bash
+$ rails server
+
+# or you can use below command instead of `rails server`
+$ rails s
 ```
